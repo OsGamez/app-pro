@@ -1,3 +1,55 @@
-<p>
-  graficas1 works!
-</p>
+<section class="content">
+    <div class="row">
+        <div class="col-xs-6">
+          <div class="box box-default">
+            <div class="box-body">
+                <h4 class="box-title">{{graphics.grafico1.legend}}</h4>
+                <app-graphicdona
+                    [chartLabels]="graphics.grafico1.labels"
+                    [chartData]="graphics.grafico1.data"
+                    chartType="doughnut">
+                </app-graphicdona>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6">
+            <div class="box box-default">
+              <div class="box-body">
+                <h4 class="box-title">{{graphics.grafico2.legend}}</h4>  
+                <app-graphicdona
+                    [chartLabels] = "graphics.grafico2.labels"
+                    [chartData] = "graphics.grafico2.data"
+                    chartType = "doughnut">
+                </app-graphicdona>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-xs-6">
+            <div class="box box-default">
+              <div class="box-body">
+                <h4 class="box-title">{{graphics.grafico3.legend}}</h4>
+                <app-graphicdona
+                    [chartLabels] = "graphics.grafico3.labels"
+                    [chartData] = "graphics.grafico3.data"
+                    chartType = "doughnut">
+                </app-graphicdona>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6">
+              <div class="box box-default">
+                <div class="box-body">
+                    <h4 class="box-title">{{graphics.grafico4.legend}}</h4>
+                    <app-graphicdona
+                        [chartLabels] = "graphics.grafico4.labels"
+                        [chartData] = "graphics.grafico4.data"
+                        chartType = "doughnut">
+                    </app-graphicdona>
+                </div>
+              </div>
+            </div>
+        </div>
+</section>
